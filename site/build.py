@@ -7,8 +7,9 @@ OUT = os.path.dirname(os.path.abspath(__file__))
 SITE_NAME = "Swapnil Kumar"
 EMAIL = "swapnil.kumar22@alumni.imperial.ac.uk"
 PHONE = "07543 756454"
-GITHUB = "https://github.com/SwapnilMurat"
+GITHUB = "https://github.com/SwapnilKumar08"
 SCHOLAR = "https://scholar.google.com/citations?user=IYPVDYUAAAAJ&hl=en"
+CV_PATH = "assets/Swapnil_Kumar_CV_GTV-UK.pdf"
 
 NAV = [
     ("index.html", "Home"),
@@ -140,6 +141,7 @@ def header(active):
     for href, label in NAV[:-1]:
         cur = ' aria-current="page"' if href == active else ""
         links += f'<a href="{href}"{cur}>{label}</a>'
+    links += f'<a class="btn btn--ghost" href="{CV_PATH}" target="_blank" rel="noopener">CV {ARROW}</a>'
     cur = ' aria-current="page"' if active == "contact.html" else ""
     links += f'<a class="btn btn--primary" href="contact.html"{cur}>Get in touch {ARROW}</a>'
     return f'''<header class="site-header">
@@ -171,6 +173,7 @@ def footer():
         <ul class="footer-links">
           <li><a href="{GITHUB}" target="_blank" rel="noopener">GitHub</a></li>
           <li><a href="{SCHOLAR}" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="{CV_PATH}" target="_blank" rel="noopener">CV (PDF)</a></li>
           <li><a href="https://arxiv.org/abs/2503.08408" target="_blank" rel="noopener">arXiv</a></li>
           <li><a href="mailto:{EMAIL}">Email</a></li>
         </ul>
@@ -266,6 +269,7 @@ home = f'''
     </p>
     <div class="hero__cta" data-reveal data-reveal-delay="260">
       <a class="btn btn--primary" href="research.html">Explore the research {ARROW}</a>
+      <a class="btn btn--ghost" href="{CV_PATH}" target="_blank" rel="noopener">Download CV</a>
       <a class="btn btn--ghost" href="ventures.html">Ventures &amp; innovation</a>
     </div>
     <div class="hero__meta" data-reveal data-reveal-delay="320">
@@ -464,13 +468,13 @@ home = f'''
     <h2 class="h2" style="margin-top:18px;max-width:20ch;" data-reveal data-reveal-delay="80">Cities, mountains, and long conversations.</h2>
     <p class="body" style="margin-top:16px;max-width:56ch;" data-reveal data-reveal-delay="120">
       Between London, Zurich and Boston — cycling, running, and the occasional attempt at
-      photography. Replace these four placeholders with your own photographs.
+      photography.
     </p>
     <div class="gallery" style="margin-top:clamp(28px,3.5vw,44px);" data-reveal data-reveal-delay="160">
-      {art("portrait", "", "Photo 01", seed=21)}
-      {art("portrait", "", "Photo 02", seed=22)}
-      {art("portrait", "", "Photo 03", seed=23)}
-      {art("portrait", "", "Photo 04", seed=24)}
+      {art("portrait", "", "London", seed=21)}
+      {art("portrait", "", "Zurich", seed=22)}
+      {art("portrait", "", "Boston", seed=23)}
+      {art("portrait", "", "Research travel", seed=24)}
     </div>
   </div>
 </section>
@@ -890,10 +894,10 @@ PUBS = [
      "2024", "https://compneuro.neuromatch.io/tutorials/W0D0_NeuroVideoSeries/student/W0D0_Tutorial3.html"),
     ("Convolutional LSTM and PredRNN for Spatiotemporal Modelling",
      "Stanford University · physics-informed and generative ML for physical science",
-     "2024", None),
+      "2024", "https://www.researchgate.net/publication/384665581_Convolutional_LSTM_PredRNN_Model"),
     ("Equitable, Ethical and Fair Data and AI Governance for Large Language Models",
      "MIT Science Policy Review",
-     "2024", None),
+      "2024", "https://sciencepolicyreview.pubpub.org/pub/xk9f6tzw/release/4"),
 ]
 
 pub_rows = ""
@@ -1050,12 +1054,13 @@ contact = f'''
         <a class="contact-row" href="mailto:{EMAIL}"><span class="k">Email</span><span class="v">{EMAIL}</span></a>
         <a class="contact-row" href="tel:+447543756454"><span class="k">Phone</span><span class="v">{PHONE}</span></a>
         <div class="contact-row"><span class="k">Location</span><span class="v">London, United Kingdom</span></div>
-        <a class="contact-row" href="{GITHUB}" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">github.com/SwapnilMurat</span></a>
+        <a class="contact-row" href="{GITHUB}" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">github.com/SwapnilKumar08</span></a>
         <a class="contact-row" href="{SCHOLAR}" target="_blank" rel="noopener"><span class="k">Scholar</span><span class="v">Google Scholar profile</span></a>
+        <a class="contact-row" href="{CV_PATH}" target="_blank" rel="noopener"><span class="k">CV</span><span class="v">Download full CV (PDF)</span></a>
         <a class="contact-row" href="https://arxiv.org/abs/2503.08408" target="_blank" rel="noopener"><span class="k">arXiv</span><span class="v">2503.08408</span></a>
       </div>
       <p class="form-note" style="margin-top:22px;">
-        Add a LinkedIn or X handle here whenever you'd like — the row markup is already in place.
+        Open to collaboration across research, product builds and technical advisory.
       </p>
     </div>
 

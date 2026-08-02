@@ -14,6 +14,7 @@ news.html             News, awards & honours
 contact.html          Contact details + message form
 assets/styles.css     All styling (one file, CSS custom properties at the top)
 assets/main.js        Mobile nav, scroll reveals, stat counters, form handoff
+assets/Swapnil_Kumar_CV_GTV-UK.pdf  Downloadable CV used across the site
 build.py              Optional generator that regenerates every HTML file
 README.md             This file
 ```
@@ -72,15 +73,22 @@ server-side, replace the submit handler with one of:
 
 ## Hosting
 
-Any static host works. Drag the folder onto **Netlify Drop**, push to a
-**GitHub Pages** repo, or `vercel deploy`. No configuration needed.
+Any static host works. For a zero-cost, durable setup, this repo includes a
+GitHub Pages workflow in `.github/workflows/deploy-pages.yml` that publishes
+the `site/` folder.
 
-For a custom domain, point an `A`/`CNAME` record at the host and set the domain
-in its dashboard.
+Setup steps:
+
+1. Push this repository to GitHub.
+2. Open **Settings -> Pages**.
+3. Set **Source** to **GitHub Actions**.
+4. Push to `main` (or run the workflow manually).
+
+Expected URL:
+
+`https://swapnilkumar08.github.io/Webpage_Swapnil-Kumar/`
 
 ## Still to personalise
 
-- Four photo placeholders on the home page ("Life outside work")
-- LinkedIn / X handles on the contact page (markup is already there, commented in the note)
 - A profile photo if you want one in the hero
 - Open Graph share image (`og:image` meta tag is not yet set)
