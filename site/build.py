@@ -457,6 +457,16 @@ home = f'''
         <div><p class="tl-role">Researcher &amp; Graduate Teaching Assistant</p><p class="tl-org">Imperial College London</p></div>
         <p class="tl-desc">Multi-fidelity deep neural networks for uncertainty propagation; taught machine learning, digital health, optimisation and generative AI.</p>
       </div>
+      <div class="tl-item">
+        <p class="tl-date">Sep 2021 — Mar 2022</p>
+        <div><p class="tl-role">Consultant</p><p class="tl-org">PQE Group</p></div>
+        <p class="tl-desc">Delivered 20 manufacturing and machine-learning projects, led a ten-member team, and coordinated delivery planning against timeline and KPI targets.</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">Feb 2020 — Jul 2020</p>
+        <div><p class="tl-role">Project Trainee</p><p class="tl-org">Robert Bosch R&amp;D</p></div>
+        <p class="tl-desc">Analysed linear and nonlinear connected-vehicle stability and developed microcontroller logic for coordinated human-driven and autonomous operation.</p>
+      </div>
     </div>
     <a class="btn btn--ghost" style="margin-top:30px;" href="ventures.html" data-reveal>Full experience {ARROW}</a>
   </div>
@@ -495,6 +505,26 @@ research = page_hero(
     "flow", seed=31,
 ) + f'''
 <hr class="rule">
+
+<section class="section section--tight">
+  <div class="wrap split split--even">
+    <div data-reveal>
+      <p class="eyebrow">Featured simulation panel</p>
+      <h2 class="h2" style="margin-top:18px;">Aerospace fluid dynamics and sequence forecasting.</h2>
+      <p class="body" style="margin-top:16px;">
+        This panel combines high-fidelity CFD insights with sequence forecasting methods such as
+        ConvLSTM and PredRNN. It reflects the same CV-backed theme of connecting expensive numerical
+        simulation with practical ML surrogates for faster decision support.
+      </p>
+    </div>
+    <div data-reveal data-reveal-delay="100">
+      <figure class="art art--wide">
+        <img src="assets/research-feature-image.png" alt="Aerospace fluid dynamics and ML-driven sequence forecasting panel" loading="lazy" onerror="this.style.display='none'">
+        <span class="art__cap">PyFR · Nektar++ · ConvLSTM · PredRNN</span>
+      </figure>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="wrap">
@@ -722,7 +752,7 @@ ventures = page_hero(
   <div class="wrap">
     <p class="eyebrow" data-reveal>Selected engagements</p>
     <h2 class="h2" style="margin-top:18px;" data-reveal data-reveal-delay="80">Previously.</h2>
-    <div class="grid grid--3" style="margin-top:clamp(30px,4vw,50px);">
+    <div class="grid grid--2" style="margin-top:clamp(30px,4vw,50px);">
 
       <article class="card" data-reveal>
         <p class="card__num">Jun — Sep 2025</p>
@@ -759,21 +789,50 @@ ventures = page_hero(
       </article>
 
       <article class="card" data-reveal data-reveal-delay="160">
-        <p class="card__num">2020 — 2022</p>
-        <h3 class="h3">PQE Group &amp; Robert Bosch R&amp;D</h3>
+        <p class="card__num">Sep 2021 — Mar 2022</p>
+        <h3 class="h3">PQE Group — Consultant</h3>
         <p>
-          <strong>PQE Group — Consultant.</strong> Delivered 20 manufacturing and machine-learning
-          projects, managed a ten-member team, prepared delivery plans and coordinated with IT
-          stakeholders against timelines and KPIs.
+          Delivered 20 manufacturing and machine-learning projects, managed a ten-member team,
+          prepared delivery plans, and coordinated with IT stakeholders to meet project milestones
+          and KPI targets.
         </p>
-        <p>
-          <strong>Robert Bosch R&amp;D — Project Trainee.</strong> Analysed linear and nonlinear stability
-          behaviour in connected-vehicle systems and developed microcontroller logic coordinating
-          human-driven and autonomous operation.
-        </p>
-        <div class="card__tags"><span class="tag">Consulting</span><span class="tag">Connected vehicles</span><span class="tag">Embedded</span></div>
+        <div class="card__tags"><span class="tag">Consulting</span><span class="tag">Delivery planning</span><span class="tag">Team lead</span></div>
       </article>
 
+      <article class="card" data-reveal>
+        <p class="card__num">Feb 2020 — Jul 2020</p>
+        <h3 class="h3">Robert Bosch R&amp;D — Project Trainee</h3>
+        <p>
+          Analysed linear and nonlinear stability behaviour in connected-vehicle systems and
+          developed microcontroller logic to coordinate human-driven and autonomous operation.
+        </p>
+        <div class="card__tags"><span class="tag">Connected vehicles</span><span class="tag">Control</span><span class="tag">Embedded systems</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Industry timeline</p>
+    <h2 class="h2" style="margin-top:18px;" data-reveal data-reveal-delay="80">Separate experience chronology.</h2>
+    <div class="timeline" style="margin-top:clamp(28px,3.5vw,44px);" data-reveal data-reveal-delay="120">
+      <div class="tl-item">
+        <p class="tl-date">Jun 2025 — Sep 2025</p>
+        <div><p class="tl-role">Artificial Intelligence Engineer</p><p class="tl-org">Propeterra</p></div>
+        <p class="tl-desc">Integrated multi-LLM platform pipelines, large-scale data collection, automation, geospatial analytics and production CI/CD practices.</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">Sep 2021 — Mar 2022</p>
+        <div><p class="tl-role">Consultant</p><p class="tl-org">PQE Group</p></div>
+        <p class="tl-desc">Delivered 20 manufacturing and ML projects while leading a ten-member team and coordinating project execution with IT stakeholders.</p>
+      </div>
+      <div class="tl-item">
+        <p class="tl-date">Feb 2020 — Jul 2020</p>
+        <div><p class="tl-role">Project Trainee</p><p class="tl-org">Robert Bosch R&amp;D</p></div>
+        <p class="tl-desc">Studied connected-vehicle stability dynamics and built microcontroller logic for mixed human/autonomous control behaviour.</p>
+      </div>
     </div>
   </div>
 </section>
