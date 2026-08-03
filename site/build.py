@@ -734,25 +734,6 @@ ventures = page_hero(
 
       <div data-reveal data-reveal-delay="120">
         {art("graph", "art--wide", "Obligation graph · rule dependencies", seed=42)}
-        <div class="card" style="margin-top:clamp(18px,2.4vw,30px);">
-          <p class="card__num">Feb — Jun 2026</p>
-          <h3 class="h3">A-Team Academy</h3>
-          <p>
-            Two production education platforms — <strong>EconRev</strong> and <strong>Predicted Papers</strong> —
-            covering personalised revision, predicted examination papers, automated marking, model answers,
-            diagram practice, grade estimation, dashboards, CRM workflows and payments.
-          </p>
-          <p>
-            Front ends in React 18, Vite, TypeScript, Tailwind and shadcn/ui; back end on Supabase with
-            PostgreSQL, Auth, Storage, Row-Level Security, Realtime and Edge Functions. Claude and OpenAI
-            models integrated through an AI gateway, with RAG, semantic vector search, knowledge graphs
-            and computer vision improving syllabus alignment, feedback quality and diagram verification.
-          </p>
-          <div class="card__tags">
-            <span class="tag">React 18</span><span class="tag">Supabase</span><span class="tag">Claude / OpenAI</span>
-            <span class="tag">Computer vision</span>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -763,6 +744,26 @@ ventures = page_hero(
     <p class="eyebrow" data-reveal>Selected engagements</p>
     <h2 class="h2" style="margin-top:18px;" data-reveal data-reveal-delay="80">Previously.</h2>
     <div class="grid grid--2" style="margin-top:clamp(30px,4vw,50px);">
+
+      <article class="card" data-reveal>
+        <p class="card__num">Feb — Jun 2026</p>
+        <h3 class="h3">A-Team Academy</h3>
+        <p>
+          Two production education platforms — <strong>EconRev</strong> and <strong>Predicted Papers</strong> —
+          covering personalised revision, predicted examination papers, automated marking, model answers,
+          diagram practice, grade estimation, dashboards, CRM workflows and payments.
+        </p>
+        <p>
+          Front ends in React 18, Vite, TypeScript, Tailwind and shadcn/ui; back end on Supabase with
+          PostgreSQL, Auth, Storage, Row-Level Security, Realtime and Edge Functions. Claude and OpenAI
+          models integrated through an AI gateway, with RAG, semantic vector search, knowledge graphs
+          and computer vision improving syllabus alignment, feedback quality and diagram verification.
+        </p>
+        <div class="card__tags">
+          <span class="tag">React 18</span><span class="tag">Supabase</span><span class="tag">Claude / OpenAI</span>
+          <span class="tag">Computer vision</span>
+        </div>
+      </article>
 
       <article class="card" data-reveal>
         <p class="card__num">Jun — Sep 2025</p>
