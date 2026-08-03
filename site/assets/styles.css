@@ -312,7 +312,7 @@ body.nav-open .nav-toggle span::after { transform: translateY(-1.5px) rotate(-45
 .contact-row:hover .v { color: var(--ember-bright); }
 
 /* ---------- gallery ---------- */
-.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(12px, 1.6vw, 20px); }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(12px, 1.6vw, 20px); }
 .gallery .art { aspect-ratio: 3 / 4; }
 
 /* ---------- footer ---------- */
